@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表單範例</title>
+    <style>
+	body
+    {
+  		background-color: lightblue;
+	}
+</style>
+</head>
 
+<body>
+    <h2>會員註冊表單</h2>
+    <form action="#" method="post">
+        <label for="text">帳戶名稱：</label>
+        <input type="text" id="text" name="text"><br><br>
+        
+        <label for="password">密碼：</label>
+        <input type="password" id="password" name="password"><br><br>
+        
+        <label for="email">電子郵件：</label>
+        <input type="email" id="email" name="email"><br><br>
+        
+        <label for="number">年齡：</label>
+        <input type="number" id="number" name="number" min="0" max="100"><br><br>
+        
+        <label for="date">註冊日期：</label>
+        <input type="date" id="date" name="date"><br><br>
+        
+        <label for="time">當前時間：</label>
+        <input type="time" id="time" name="time"><br><br>
+        
+        <label for="color">喜好的顏色：</label>
+        <input type="color" id="color" name="color"><br>
+        
+        <label>用於用戶名稱顯示</label><br><br>
+        
+        <label for="range">範圍選擇：</label>
+        <input type="range" id="range" name="range" min="0" max="100"><br><br>
+        
+        <label>性別：</label>
+        <input type="radio" id="radio1" name="radio" value="選項1">
+        <label for="radio1">男性</label>
+        <input type="radio" id="radio2" name="radio" value="選項2">
+        <label for="radio2">女性</label>
+        <input type="radio" id="radio3" name="radio" value="選項3">
+        <label for="radio3">其他</label><br><br>
+        
+        <label>核取方塊：</label>
+        <input type="checkbox" id="checkbox1" name="checkbox1" value="是">
+        <label for="checkbox1">是</label>
+        <input type="checkbox" id="checkbox2" name="checkbox2" value="否">
+        <label for="checkbox2">否</label><br><br>
+        
+        <label for="select">帳戶類別：</label>
+        <select id="select" name="select">
+            <option value="選項A">個人使用</option>
+            <option value="選項B">公司帳號</option>
+            <option value="選項C">其他</option>
+        </select><br><br>
+        
+        <label for="textarea">意見回饋：</label><br>
+        <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea><br><br>
+        
+        <label for="file">檔案上傳：</label>
+        <input type="file" id="file" name="file"><br><br>
+        
+        <label for="hidden">隱藏欄位：</label>
+        <input type="hidden" id="hidden" name="hidden" value="隱藏的值"><br><br>
+        
+        <button type="submit">提交</button>
+        <button type="reset">重設</button>
+    </form>
+</body>
+</html>
