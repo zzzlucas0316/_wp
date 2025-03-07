@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>感謝註冊</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(235, 180, 248);
+        }
+        h1 {
+            font-size: 3em;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>感謝註冊</h1>
+</body>
+
+</html>
 
