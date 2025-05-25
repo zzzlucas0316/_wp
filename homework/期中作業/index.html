@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>簡易社交網路</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; }
+    header { background-color: #4267B2; color: white; padding: 1rem; display: flex; justify-content: space-between; }
+    header a { color: white; margin-left: 1rem; text-decoration: none; }
+    .container { max-width: 800px; margin: 2rem auto; padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .post-box textarea { width: 100%; padding: 1rem; border: 1px solid #ccc; border-radius: 5px; resize: vertical; }
+    .post-box button { margin-top: 0.5rem; padding: 0.5rem 1rem; background: #4267B2; color: white; border: none; border-radius: 5px; }
+    .post { border-top: 1px solid #eee; padding: 1rem 0; }
+    .post .author { font-weight: bold; color: #333; }
+    .post .content { margin: 0.5rem 0; }
+    .comments { margin-top: 0.5rem; padding-left: 1rem; font-size: 0.9rem; color: #555; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div><strong>社交網路HandBook</strong></div>
+    <nav>
+      <a href="#">登入</a>
+      <a href="#">註冊</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="post-box">
+      <h3>發佈新貼文</h3>
+      <textarea rows="4" placeholder="你在想什麼？"></textarea>
+      <br>
+      <button>發佈</button>
+    </div>
+
+    <div class="post">
+      <div class="author">小明</div>
+      <div class="content">今天的天氣真好！</div>
+      <div class="comments">
+        💬 小美：真的耶，我也想出門走走～
+      </div>
+
+        <div class="comment-form">
+            <input type="text" placeholder="輸入留言..." />
+            <button class="comment-btn">留言</button>
+        </div>
+
+    </div>
+
+    <div class="post">
+      <div class="author">小華</div>
+      <div class="content">剛看完一部超讚的電影！</div>
+      <div class="comments">
+        💬 小明：快推薦一下！
+      </div>
+      <div class="comments">
+        💬 小明：我已經迫不急待了！
+      </div>
+        <div class="comment-form">
+            <input type="text" placeholder="輸入留言..." />
+            <button class="comment-btn">留言</button>
+        </div>
+    </div>
+  </div>
+<script src="main.js"></script>
+</body>
+</html>
